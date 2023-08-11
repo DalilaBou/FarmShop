@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none ;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    margin: 0px auto;
+    background: #1eae98;
+}
+.navbar ul{
+    list-style-type: none;
+}
+.navbar ul li{
+    float: left;
+    width: 217px;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    border-left: 1px solid #fff;
+    position: relative;
+
+}
+.navbar ul li a{
+    color: #fff;
+    display: block;
+}
+.navbar ul li a:hover{
+    background-color: #067766bf;
+}
+.navbar ul ul{
+    position: absolute;
+    background-color: #1eae98;
+    display: none;
+}
+.navbar ul ul ul {
+    left: 100%;
+    margin-top: 0px;
+}
+
+.navbar ul li:hover > ul {
+    display: block;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+  }
+  
+  nav ul li a{
+      font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:#1eae98 ;
+      top: 60px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size:20px;
+
+  }
+  a:hover,a.active{
+      background: none;
+      color: #0082e6;
+  }
+  #check:checked~ ul{
+      left: 0;
+  }
+}
+
+.containerr{
+  border: 1px solid green;
+        max-width: 1200px; 
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      margin-top: 120px;
+      
+
+}
+
+
+#index-h1 { 
+    font-family:sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #26ae6f;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+    letter-spacing: 4px;
+  
+}
+#index-p{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #111;
+    text-transform: inherit;
+    display: block;
+  margin: 20px;
+  padding-left: 20px;
+    line-height:1.4;
+   
+    }
+    
+    /*shop*/
+    #site-h1 { 
+    font-family:sans-serif ;
+    font-size: 30px;
+    font-weight: 600;
+    color:#26ae6f;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    letter-spacing: 5px;
+  
+}
+#sit-p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #111;
+    text-transform: inherit;
+    display: block;
+    padding: 50px ;
+}
+
+
+    #staff-img{
+    
+     margin: 60px;
+    width: 300px;
+
+    }
+    #staff-p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 40px;
+        color:green;
+        text-transform: inherit;
+    margin: 60px;
+    
+
+}
+#staff-img {
+    
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+    
+  }
+ #staff-img:hover{
+    
+    transform: scale(1.1);
+  }
+ 
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container-2 {
+    padding: 0 16px;
+  }
+  
+  .container-2::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+   footer{
+    background: #1eae98;
+    font-size: 20px;
+    padding: 30px;
+  }
+  #staff-h2{
+    font-size: 39px;
+  }
+  
+ 
+  
+
+    /*activieties*/
+    
+    
+    #act-h1{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        font-weight: 800;
+        color:#26ae6f;
+        text-transform: uppercase;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 90px 0;
+        letter-spacing: 5px;
+      
+    }
+    .container{
+        max-width: 1200px;
+        margin: auto;
+        background: #f2f2f2;
+        overflow: auto;
+    }
+.gallery {
+  
+    margin: 5px;
+    width: 390px;
+   
+  }
+ 
+  
+  .gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+  }
+  .row img:hover{
+    
+    transform: scale(1.1);
+  }
+  #act-p{
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #111;
+    text-transform: inherit;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;}
+   
+
+
+  /*contact*/
+#cust-h1{
+  font-family: 'Poppins', sans-seri;
+  font-size: 30px;
+  font-weight: 800;
+  color:#26ae6f;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 90px 0;
+  letter-spacing: 5px;
+
+  }
+  p{
+    font-size: 30px;
+  }
+  p{
+    font-size: 30px;
+  }
+  
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+
+.prevv, .nextt {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.nextt {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prevv:hover, .nextt:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+q {font-style: italic;}
+
+.author {color:#56cf92 ;}
+.foot{
+  background: #e7e1e1;
+  height: 400px;
+}
+
+ /*contact form page */
+
+ iframe {
+  width: 80%;
+  height: 500px;
+  margin: 50px auto;
+  display: block;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top:5px;
+  padding-bottom: 5px;
+
+}
+
+input[type="submit"] {
+  background-color :green;
+  border: none;
+  color: #fff;
+  padding:16px 32px;
+  margin: 5px 5px;
+}
+
+form {
+  padding-left: 10%;
+  padding-right:10%;
+}
+
+
+
